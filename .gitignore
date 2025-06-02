@@ -1,4 +1,7 @@
 __pycache__/
 *.pyc
 .env
-.DS_Store
+cifar-10-python.tar.gz
+data/cifar10_preprocessed.npz
+y_train.npy
+X_train.npy
