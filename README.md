@@ -64,3 +64,49 @@ dataset_assignments/
 - Time Series Challenge
 - YAML Exploration Assignment
 - Custom Dataset Projects
+
+---
+
+## 🚀 How to Run
+
+To try out the assignments in this repo:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/evenmillz/dataset_assignments.git
+cd dataset_assignments
+```
+
+### 2. Set Up Environment
+
+Make sure you have Python 3.12 and Anaconda installed. Create a new environment (optional but recommended):
+
+```bash
+conda create -n data_env python=3.12
+conda activate data_env
+pip install -r requirements.txt  # if requirements.txt is available
+```
+
+### 3. Run CIFAR-10 Preprocessing
+
+```bash
+cd cifar10_project
+python preprocess_cifar10_dataset.py
+python verify_preprocessed_data.py
+```
+
+### 4. Run Time Series Forecasting
+
+```bash
+cd ../tsp_tutorial_assignment
+python temperature_prediction.py
+```
+
+---
+
+## 🤖 AI Usage Disclosure
+
+All project logic, scripts, and structure were human-authored and iteratively refined using ChatGPT as a programming assistant. ChatGPT provided debugging help, code planning support, and README generation under the direct guidance of Even Richardson.
+
+---
