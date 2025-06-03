@@ -40,3 +40,18 @@ plt.title('Actual vs. Predicted Temperatures')
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+# Evaluate Model Accuracy
+
+import numpy as np
+from sklearn.metrics import mean_absolute_error
+
+actual_temperatures = np.array(df_merged['y'])
+predicted_temperatures = np.array(df_merged['yhat'])
+
+absolute_errors = np.abs(actual_temperatures - predicted_temperatures)
+mae_manual = np.mean(absolute_errors)
+mae_sklearn = mean_absolute_error(actual_temperatures, predicted_temperatures)
+
+print(f"Manual MAE: {mae_manual}")
+print(f"Sklearn MAE: {mae_sklearn}")
